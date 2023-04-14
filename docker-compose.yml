@@ -3,6 +3,7 @@ version: '3.9'
 services:
   postgresql:
     image: bitnami/postgresql:latest
+    restart: always
     ports:
       - '${POSTGRES_PORT}:5432'
     volumes:
